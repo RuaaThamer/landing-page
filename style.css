@@ -1,0 +1,298 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    width: 100px;
+}
+
+body, html {
+    background: #F7F7FF;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+#scooter {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.para1 {
+    font-size: 14px;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.18);
+    border-radius: 10px;
+    width: 75%;
+    margin: auto;
+    margin-top: 1em;
+    text-align: left;
+    padding: 1em;
+}
+
+.application-form h2 {
+    font-size: 30px;
+    margin-bottom: 0.25em;
+}
+
+p {
+    color: rgb(126, 126, 126);
+    font-size: 16px;
+}
+
+.form-input {
+    font-size: 15px;
+    padding: .7em;
+    background: #F7F7FF;
+    border-radius: .5em;
+    margin: 0.35em 0;
+}
+
+.application-form .form-input {
+    background: rgba(212, 212, 212, 0.349);
+}
+
+.form-input input {
+    border: none;
+    color: #050505ef;
+    background-color: transparent;
+    width: 100%;
+}
+
+.form-input input:focus {
+    outline: none;
+}
+
+.form-agreement {
+    font-size: 15px;
+    text-align: start;
+    width: 100%;
+    display: flex;
+    margin: .3em 0;
+    color: rgb(126, 126, 126);
+}
+
+.form-agreement #checkbox {
+    padding: 1em;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(126, 126, 126);
+}
+
+.form-agreement div {
+    margin: 0.25em;
+}
+
+
+
+.p-2 {
+    font-size: 12px;
+    text-align: start;
+}
+
+.p-2 span {
+    color: red;
+}
+
+.application-form button {
+    background-color: #20fab8;
+    border: none;
+    border-radius: .5em;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+footer {
+    background-color: #FFFD8C;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 7.5%;
+    margin-top: 2em;
+    color: #050505ef;
+}
+
+.in-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .75em;
+    row-gap: 0em;
+}
+
+.in-footer :nth-child(1) {
+    grid-column: span 1;
+}
+
+.in-footer :nth-child(2) {
+    grid-column: span 3;
+}
+
+.in-footer :nth-child(3) {
+    grid-column: span 4;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: .75em 0;
+}
+
+footer button {
+    background-color: #FF8480;
+    color: white;
+    border: none;
+    border-radius: .5em;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.p-3 {
+    font-size: 16px;
+    color: black;
+    font-weight:bold;
+    width: 60%;
+}
+
+.p-4{
+    font-size: 13px;
+    margin: 0.35em 0;
+    width: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        width: 75%;
+    }
+    .application-form {
+        padding: 1.75em;
+        width: 65%;
+    }
+
+    #scooter {
+        width: 250px;
+    }
+
+    footer .form-input {
+        display: flex;
+        align-items: center;
+        padding: 0.1em 0.25em;
+    }
+
+    .in-footer {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: .75em;
+        row-gap: 0em;
+    }
+
+    .in-footer :nth-child(1) {
+        grid-column: span 1;
+    }
+    
+    .in-footer :nth-child(2) {
+        grid-column: span 3;
+    }
+    
+    .in-footer :nth-child(3) {
+        grid-column: span 4;
+    }
+
+    .footer-right {
+        width: 50%;
+        margin: 0.75em auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        width: 90%;
+        height: 90vh;
+        align-items: center;
+        margin: auto;
+    }
+
+    main :nth-child(1) {
+        grid-column: span 3;
+    }
+    main :nth-child(2) {
+        grid-column: span 2;
+    }
+    main :nth-child(3) {
+        grid-column: span 3;
+    }
+
+    #scooter {
+        width: 500px;
+    }
+
+    section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section div {
+        padding: auto;
+    }
+
+    #logo {
+        position: absolute;
+        top: 5%;
+    }
+
+    .application-form {
+        margin: auto;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer-right {
+        width: 30%;
+        display: flex;
+        justify-content: end;
+        gap: 2em;
+        
+    }
+
+   
+
+    .footer-left {
+        width: 35%;
+    }
+    
+    
+}
